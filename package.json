@@ -1,0 +1,22 @@
+{
+  "name": "ehr-blockchain",
+  "version": "1.0.0",
+  "description": "Blockchain-Enabled E-Health Record Sharing System - IILM University Major Project",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network sepolia",
+    "node": "hardhat node",
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && node server.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
